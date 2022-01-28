@@ -19,7 +19,8 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.jsx?$": "babel-jest"
+      "^.+\\.jsx?$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
     }
   },
   "devDependencies": {
@@ -34,6 +35,7 @@
     "@storybook/react": "^6.4.15",
     "@testing-library/react": "^12.1.2",
     "babel-jest": "^27.4.6",
+    "jest-transform-stub": "^2.0.0",
     "parcel": "^2.2.1",
     "react-test-renderer": "^17.0.2"
   },
