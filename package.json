@@ -7,9 +7,10 @@
   },
   "version": "1.0.0",
   "description": "\"Button stuff\"",
-  "source": "src/index.js",
+  "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/module.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
@@ -23,13 +24,12 @@
       ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
     },
     "testEnvironment": "jest-environment-jsdom"
-
-    
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
+    "@parcel/transformer-typescript-types": "^2.2.1",
     "@storybook/addon-actions": "^6.4.15",
     "@storybook/addon-essentials": "^6.4.15",
     "@storybook/addon-jest": "^6.4.15",
