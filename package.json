@@ -1,5 +1,8 @@
 {
-  "name": "sometimes",
+  "name": "@emanueledancelli/sometimes",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/emanueledancelli"
+  },
   "version": "1.0.0",
   "description": "\"Button stuff\"",
   "source": "src/index.js",
