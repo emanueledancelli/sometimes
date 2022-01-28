@@ -1,5 +1,7 @@
 {
   "name": "@emanueledancelli/sometimes",
+  "author": "Emanuele Dancelli",
+  "license": "ISC",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/emanueledancelli"
   },
@@ -11,22 +13,32 @@
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "Emanuele Dancelli",
-  "license": "ISC",
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@storybook/addon-actions": "^6.4.15",
     "@storybook/addon-essentials": "^6.4.15",
+    "@storybook/addon-jest": "^6.4.15",
     "@storybook/addon-links": "^6.4.15",
+    "@storybook/addon-storyshots": "^6.4.15",
     "@storybook/react": "^6.4.15",
-    "babel-loader": "^8.2.3",
-    "parcel": "^2.2.1"
+    "@testing-library/react": "^12.1.2",
+    "babel-jest": "^27.4.6",
+    "parcel": "^2.2.1",
+    "react-test-renderer": "^17.0.2"
   },
   "dependencies": {
+    "jest": "^25.5.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
